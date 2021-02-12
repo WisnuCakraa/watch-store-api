@@ -1,9 +1,9 @@
-package com.enigma.watchstore.Services.student;
+package com.enigma.watchstore.Services.watch;
 
 import java.util.List;
 
-import com.enigma.watchstore.Entity.student.WatchDetailEntity;
-import com.enigma.watchstore.Repository.WatchDetailRepository;
+import com.enigma.watchstore.Entity.watch.WatchDetailEntity;
+import com.enigma.watchstore.Repository.watch.WatchDetailRepository;
 
 import org.springframework.stereotype.Service;
 

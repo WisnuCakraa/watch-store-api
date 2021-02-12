@@ -1,6 +1,6 @@
-package com.enigma.watchstore.Repository;
+package com.enigma.watchstore.Repository.watch;
 
-import com.enigma.watchstore.Entity.student.WatchDetailEntity;
+import com.enigma.watchstore.Entity.watch.WatchDetailEntity;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
