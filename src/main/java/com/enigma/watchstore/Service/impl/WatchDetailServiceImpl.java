@@ -35,7 +35,7 @@ public class WatchDetailServiceImpl implements WatchDetailService {
         boolean exist = watchDetailRepository.existsById(id);
 
         if (!exist) {
-            throw new IllegalStateException("watchDetail with id " + id + "doesnt exist");
+            throw new IllegalStateException("watchDetail with id " + id + " doesnt exist");
         }
 
         watchDetailRepository.deleteById(id);
