@@ -40,7 +40,7 @@ public class UserServiceImpl implements UserService {
         boolean exist = userRepository.existsById(id);
 
         if (!exist) {
-            throw new IllegalStateException("user with id " + id + "doesnt exist");
+            throw new IllegalStateException("user with id " + id + " doesnt exist");
         }
 
         userRepository.deleteById(id);
