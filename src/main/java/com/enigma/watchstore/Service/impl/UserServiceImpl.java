@@ -21,6 +21,16 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public UserEntity findByEmail(String email) {
+        return userRepository.findByEmail(email);
+    }
+
+    @Override
+    public UserEntity findByUsername(String username) {
+        return userRepository.findByUsername(username);
+    }
+
+    @Override
     public List<UserEntity> getUser() {
         return userRepository.findAll();
     }
@@ -38,12 +48,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public void deleteUser(String id) {
         boolean exist = userRepository.existsById(id);
-
         if (!exist) {
             throw new IllegalStateException("user with id " + id + " doesnt exist");
         }
-
         userRepository.deleteById(id);
-
     }
 }
