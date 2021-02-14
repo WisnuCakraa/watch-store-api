@@ -4,7 +4,6 @@ import java.util.List;
 
 import com.enigma.watchstore.Entity.UserEntity;
 import com.enigma.watchstore.Service.UserService;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -49,7 +48,7 @@ public class UserController {
         }
     }
 
-    @DeleteMapping(path = "/user/{id}")
+    @DeleteMapping(path = "/users/{id}")
     public void deleteWatchDetail(@PathVariable("id") String id) {
         userService.deleteUser(id);
     }
