@@ -13,6 +13,10 @@ public interface UserService {
 
     UserEntity doLoginUser(String username, String password);
 
+    UserEntity findByEmail(String email);
+
+    UserEntity findByUsername(String username);
+
     List<UserEntity> getUser();
 
     void deleteUser(String id);
