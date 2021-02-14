@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
@@ -12,11 +14,11 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity(name = "WatchDetailEntity")
 @Table(name = "watch_detail")
 public class WatchDetailEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "native")
-    @GenericGenerator(name = "native", strategy = "native")
 
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "uuid")
+    @GenericGenerator(name = "uuid", strategy = "uuid")
+    private String id;
 
     @Column(name = "product_name")
     private String productName;
@@ -30,37 +32,45 @@ public class WatchDetailEntity {
     @Column
     private Integer stock;
 
+    @ManyToOne(targetEntity = WatchSeriesEntity.class)
+    @JoinColumn(name = "series_id", referencedColumnName = "id")
+    private WatchSeriesEntity series;
+
     public WatchDetailEntity() {
     }
 
-    public WatchDetailEntity(String productName, String description, Integer price, Integer stock) {
+    public WatchDetailEntity(String productName, String description, Integer price, Integer stock,
+            WatchSeriesEntity series) {
         this.productName = productName;
         this.description = description;
         this.price = price;
         this.stock = stock;
+        this.series = series;
     }
 
-    public WatchDetailEntity(Integer id, String productName, String description, Integer price, Integer stock) {
+    public WatchDetailEntity(String id, String productName, String description, Integer price, Integer stock,
+            WatchSeriesEntity series) {
         this.id = id;
         this.productName = productName;
         this.description = description;
         this.price = price;
         this.stock = stock;
+        this.series = series;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public String getproductName() {
+    public String getProductName() {
         return productName;
     }
 
-    public void setproductName(String productName) {
+    public void setProductName(String productName) {
         this.productName = productName;
     }
 
@@ -88,10 +98,18 @@ public class WatchDetailEntity {
         this.stock = stock;
     }
 
+    public WatchSeriesEntity getSeries() {
+        return series;
+    }
+
+    public void setSeries(WatchSeriesEntity series) {
+        this.series = series;
+    }
+
     @Override
     public String toString() {
-        return "StudentEntity [description=" + description + ", id=" + id + ", price=" + price + ", productName="
-                + productName + ", stock=" + stock + "]";
+        return "WatchDetailEntity [description=" + description + ", id=" + id + ", price=" + price + ", productName="
+                + productName + ", series=" + series + ", stock=" + stock + "]";
     }
 
 }

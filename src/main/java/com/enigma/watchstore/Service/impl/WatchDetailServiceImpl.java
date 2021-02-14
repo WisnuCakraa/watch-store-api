@@ -31,7 +31,7 @@ public class WatchDetailServiceImpl implements WatchDetailService {
     }
 
     @Override
-    public void deleteWatchDetail(Integer id) {
+    public void deleteWatchDetail(String id) {
         boolean exist = watchDetailRepository.existsById(id);
 
         if (!exist) {

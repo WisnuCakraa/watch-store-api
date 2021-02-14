@@ -11,17 +11,18 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/watch-detail")
 public class WatchDetailController {
 
     @Autowired
     WatchDetailService watchDetailService;
 
-    @GetMapping("/watch-detail")
+    @GetMapping
     public List<WatchDetailEntity> getWatchDetail() {
         return watchDetailService.getWatchDetail();
     }
 
-    @PostMapping("/watch-detail")
+    @PostMapping
     public ResponseEntity<WatchDetailEntity> addWatchProduct(@RequestBody WatchDetailEntity watchDetailEntity) {
         try {
             WatchDetailEntity save = watchDetailService.addWatchDetail(watchDetailEntity);
@@ -31,7 +32,7 @@ public class WatchDetailController {
         }
     }
 
-    @PutMapping("/watch-detail")
+    @PutMapping
     public ResponseEntity<WatchDetailEntity> editWatchProduct(@RequestBody WatchDetailEntity watchDetailEntity) {
         try {
             WatchDetailEntity save = watchDetailService.addWatchDetail(watchDetailEntity);
@@ -41,8 +42,8 @@ public class WatchDetailController {
         }
     }
 
-    @DeleteMapping(path = "/watch-detail/{id}")
-    public void deleteWatchDetail(@PathVariable("id") Integer id) {
+    @DeleteMapping(path = "/{id}")
+    public void deleteWatchDetail(@PathVariable("id") String id) {
         watchDetailService.deleteWatchDetail(id);
     }
 }

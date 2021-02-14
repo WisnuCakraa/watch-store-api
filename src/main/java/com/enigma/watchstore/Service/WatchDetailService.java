@@ -12,6 +12,6 @@ public interface WatchDetailService {
 
     List<WatchDetailEntity> getWatchDetail();
 
-    void deleteWatchDetail(Integer id);
+    void deleteWatchDetail(String id);
 
 }
