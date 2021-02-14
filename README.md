@@ -1,2 +1,2 @@
 # watch-store-api
-project for watch service provider
+CRUD Watch store provider
