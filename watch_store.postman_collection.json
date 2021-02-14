@@ -1,0 +1,250 @@
+{
+	"id": "c62403e9-4710-c567-1652-38dfe0975cf8",
+	"name": "watch_store",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "User",
+			"description": "",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"order": [
+				"b8a94bc4-7dc8-2e04-214c-55c68b92261e",
+				"c23e85c6-a79a-b6c0-b060-c6339204ea15",
+				"edd82cd6-e4b6-0c62-fe6f-aa02621a0fd0"
+			],
+			"owner": "9259732",
+			"folders_order": [],
+			"id": "ba773ead-6e02-3e3d-a950-767a9baba12b"
+		},
+		{
+			"name": "watch",
+			"description": "",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"order": [
+				"410ee93c-b362-6e24-2943-4919ae30fe97",
+				"28f6b937-44ed-c701-f5e2-8b3f53e4d896",
+				"1655bbfa-81f6-dd0e-6472-9d6512ddb0be",
+				"6e06f3da-beb4-7dd8-850a-d40af67403b4"
+			],
+			"owner": "9259732",
+			"folders_order": [],
+			"id": "a8c780ee-677d-a13a-084b-b82f93698e87"
+		}
+	],
+	"folders_order": [
+		"ba773ead-6e02-3e3d-a950-767a9baba12b",
+		"a8c780ee-677d-a13a-084b-b82f93698e87"
+	],
+	"timestamp": 1613057118311,
+	"owner": "9259732",
+	"public": false,
+	"requests": [
+		{
+			"id": "1655bbfa-81f6-dd0e-6472-9d6512ddb0be",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8282/watch-detail",
+			"folder": "a8c780ee-677d-a13a-084b-b82f93698e87",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613239649499,
+			"name": "put watch_detail",
+			"description": "",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"responses": [],
+			"rawModeData": "{\n\t\"id\": 5,\n\t\"productName\":\"P3C/09 - ORANGE CARBON X-3\", \n\t\"description\":\"LIMITED EDITION At SEVENFRIDAY, we like bold statements, we love being colorful. After seeing Red, after feelingfrosty White, we now urge you to take your vitamin C! And that vitamin C can only be found in SEVENFRIDAY’s new Orange Carbon.\", \n    \"price\":22000000,\n    \"stock\":10\n}"
+		},
+		{
+			"id": "28f6b937-44ed-c701-f5e2-8b3f53e4d896",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8282/watch-detail",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613262997828,
+			"name": "get watch_Detail",
+			"description": "",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"responses": []
+		},
+		{
+			"id": "410ee93c-b362-6e24-2943-4919ae30fe97",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8282/watch-detail",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "post watch-detail",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1613239696703,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "a8c780ee-677d-a13a-084b-b82f93698e87",
+			"rawModeData": "{\n\t\"productName\":\"P3C/09 - ORANGE CARBON X-3\", \n\t\"description\":\"LIMITED EDITION At SEVENFRIDAY, we like bold statements, we love being colorful. After seeing Red, after feelingfrosty White, we now urge you to take your vitamin C! And that vitamin C can only be found in SEVENFRIDAY’s new Orange Carbon.\", \n    \"price\":22000000,\n    \"stock\":10\n}"
+		},
+		{
+			"id": "6e06f3da-beb4-7dd8-850a-d40af67403b4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8282/watch-detail/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:8282/watch-detail/1",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1613263005519,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "a8c780ee-677d-a13a-084b-b82f93698e87",
+			"rawModeData": ""
+		},
+		{
+			"id": "b8a94bc4-7dc8-2e04-214c-55c68b92261e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8282/register",
+			"folder": "ba773ead-6e02-3e3d-a950-767a9baba12b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613235220501,
+			"name": "register",
+			"description": "",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\": \"wisnu\",\n\t\"password\": \"wisnu\",\n\t\"email\": \"wisnu@gmail.com\"\n}"
+		},
+		{
+			"id": "c23e85c6-a79a-b6c0-b060-c6339204ea15",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:8282/login",
+			"folder": "ba773ead-6e02-3e3d-a950-767a9baba12b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613235509621,
+			"name": "login",
+			"description": "",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\" : \"nuchanadmin\",\n\t\"password\": \"$2a$10$yg/PRIuP9J17vMPJLOhiw.zWiUbra.FiSFxC2o16YACF.sYhHZTaC\"\n}"
+		},
+		{
+			"id": "edd82cd6-e4b6-0c62-fe6f-aa02621a0fd0",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8282/users",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"data": null,
+			"dataMode": "params",
+			"name": "get users",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1613225352474,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "ba773ead-6e02-3e3d-a950-767a9baba12b"
+		}
+	]
+}
