@@ -11,11 +11,26 @@
 			"order": [
 				"b8a94bc4-7dc8-2e04-214c-55c68b92261e",
 				"c23e85c6-a79a-b6c0-b060-c6339204ea15",
-				"edd82cd6-e4b6-0c62-fe6f-aa02621a0fd0"
+				"edd82cd6-e4b6-0c62-fe6f-aa02621a0fd0",
+				"b7c4fe5d-8c1a-8042-0a5b-b5f31b5f906e"
 			],
 			"owner": "9259732",
 			"folders_order": [],
 			"id": "ba773ead-6e02-3e3d-a950-767a9baba12b"
+		},
+		{
+			"name": "store",
+			"description": "",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"order": [
+				"d0ad4345-156c-a88c-02bb-93f3dfa3f9af",
+				"ed5fbf12-2e39-75ee-66c3-50159ac5d534",
+				"d7d4a371-cb25-2b75-9f1c-67420f0e6dbf",
+				"e450af4c-4c90-b5ad-5576-c41899c532c2"
+			],
+			"owner": "9259732",
+			"folders_order": [],
+			"id": "43754402-a1e1-5c8b-7200-ca23d4fc785d"
 		},
 		{
 			"name": "watch",
@@ -25,7 +40,11 @@
 				"410ee93c-b362-6e24-2943-4919ae30fe97",
 				"28f6b937-44ed-c701-f5e2-8b3f53e4d896",
 				"1655bbfa-81f6-dd0e-6472-9d6512ddb0be",
-				"6e06f3da-beb4-7dd8-850a-d40af67403b4"
+				"6e06f3da-beb4-7dd8-850a-d40af67403b4",
+				"cd2e0d8c-9926-595c-8e7b-3e21fa6e2724",
+				"9d3b5438-a42d-0d43-52b8-e31e39df0865",
+				"0dd7687c-056b-2870-9cb8-dc71ea5454b1",
+				"80d31367-8b34-7483-1d5d-275d53e2bdf3"
 			],
 			"owner": "9259732",
 			"folders_order": [],
@@ -34,25 +53,68 @@
 	],
 	"folders_order": [
 		"ba773ead-6e02-3e3d-a950-767a9baba12b",
-		"a8c780ee-677d-a13a-084b-b82f93698e87"
+		"a8c780ee-677d-a13a-084b-b82f93698e87",
+		"43754402-a1e1-5c8b-7200-ca23d4fc785d"
 	],
 	"timestamp": 1613057118311,
 	"owner": "9259732",
 	"public": false,
 	"requests": [
 		{
-			"id": "1655bbfa-81f6-dd0e-6472-9d6512ddb0be",
-			"headers": "Content-Type: application/json\n",
+			"id": "0dd7687c-056b-2870-9cb8-dc71ea5454b1",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer \n",
 			"headerData": [
 				{
 					"key": "Content-Type",
 					"value": "application/json",
 					"description": "",
 					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer ",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8282/watch-series",
+			"folder": "a8c780ee-677d-a13a-084b-b82f93698e87",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613345215182,
+			"name": "post watch-series",
+			"description": "",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"responses": [],
+			"rawModeData": "{\n    \"series\": \"Z\"\n}"
+		},
+		{
+			"id": "1655bbfa-81f6-dd0e-6472-9d6512ddb0be",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer \n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer ",
+					"description": "",
+					"enabled": true
 				}
 			],
 			"url": "localhost:8282/watch-detail",
-			"folder": "a8c780ee-677d-a13a-084b-b82f93698e87",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -63,17 +125,24 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1613239649499,
+			"time": 1613345205405,
 			"name": "put watch_detail",
 			"description": "",
 			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
 			"responses": [],
-			"rawModeData": "{\n\t\"id\": 5,\n\t\"productName\":\"P3C/09 - ORANGE CARBON X-3\", \n\t\"description\":\"LIMITED EDITION At SEVENFRIDAY, we like bold statements, we love being colorful. After seeing Red, after feelingfrosty White, we now urge you to take your vitamin C! And that vitamin C can only be found in SEVENFRIDAY’s new Orange Carbon.\", \n    \"price\":22000000,\n    \"stock\":10\n}"
+			"rawModeData": "{\n\t\"id\": \"7b7e0d98-6e78-11eb-8e53-9c5a443fe548\",\n\t\"productName\":\"P3C/09 - ORANGE CARBON X-3\", \n\t\"description\":\"LIMITED EDITION At SEVENFRIDAY, we like bold statements, we love being colorful. After seeing Red, after feelingfrosty White, we now urge you to take your vitamin C! And that vitamin C can only be found in SEVENFRIDAY’s new Orange Carbon.\", \n    \"price\":22000000,\n    \"stock\":10,\n    \"series\": {\n            \"id\": 2,\n            \"series\": \"P\"\n    }\n}"
 		},
 		{
 			"id": "28f6b937-44ed-c701-f5e2-8b3f53e4d896",
-			"headers": "",
-			"headerData": [],
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsYW5naXQiLCJleHAiOjE2MTMzNjc2MzcsImlhdCI6MTYxMzM0MjQzN30.D9hoeQt-GPvhi_l5Y2LauKsCv21UeEG3kNunWp_iuQmTLH2gTjr3LGSqxnxIJjb4NBgd8aLkxPNMAsrSZ5TJ5w\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsYW5naXQiLCJleHAiOjE2MTMzNjc2MzcsImlhdCI6MTYxMzM0MjQzN30.D9hoeQt-GPvhi_l5Y2LauKsCv21UeEG3kNunWp_iuQmTLH2gTjr3LGSqxnxIJjb4NBgd8aLkxPNMAsrSZ5TJ5w",
+					"description": "",
+					"enabled": true
+				}
+			],
 			"url": "localhost:8282/watch-detail",
 			"queryParams": [],
 			"preRequestScript": null,
@@ -86,7 +155,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1613262997828,
+			"time": 1613344780309,
 			"name": "get watch_Detail",
 			"description": "",
 			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
@@ -94,67 +163,172 @@
 		},
 		{
 			"id": "410ee93c-b362-6e24-2943-4919ae30fe97",
-			"headers": "Content-Type: application/json\n",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer \n",
 			"headerData": [
 				{
 					"key": "Content-Type",
 					"value": "application/json",
 					"description": "",
 					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer ",
+					"description": "",
+					"enabled": true
 				}
 			],
 			"url": "localhost:8282/watch-detail",
+			"folder": "a8c780ee-677d-a13a-084b-b82f93698e87",
 			"queryParams": [],
+			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
-			"preRequestScript": null,
 			"method": "POST",
-			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
 			"data": [],
 			"dataMode": "raw",
-			"name": "post watch-detail",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1613239696703,
 			"version": 2,
-			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "a8c780ee-677d-a13a-084b-b82f93698e87",
+			"time": 1613345202266,
+			"name": "post watch-detail",
+			"description": "",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"responses": [],
 			"rawModeData": "{\n\t\"productName\":\"P3C/09 - ORANGE CARBON X-3\", \n\t\"description\":\"LIMITED EDITION At SEVENFRIDAY, we like bold statements, we love being colorful. After seeing Red, after feelingfrosty White, we now urge you to take your vitamin C! And that vitamin C can only be found in SEVENFRIDAY’s new Orange Carbon.\", \n    \"price\":22000000,\n    \"stock\":10\n}"
 		},
 		{
 			"id": "6e06f3da-beb4-7dd8-850a-d40af67403b4",
-			"headers": "Content-Type: application/json\n",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer \n",
 			"headerData": [
 				{
 					"key": "Content-Type",
 					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer ",
 					"description": "",
 					"enabled": true
 				}
 			],
 			"url": "localhost:8282/watch-detail/1",
 			"queryParams": [],
+			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
-			"preRequestScript": null,
 			"method": "DELETE",
-			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
 			"data": [],
 			"dataMode": "raw",
-			"name": "localhost:8282/watch-detail/1",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1613263005519,
-			"version": 2,
-			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "a8c780ee-677d-a13a-084b-b82f93698e87",
+			"time": 1613345208131,
+			"name": "delete watch_detail",
+			"description": "",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"responses": [],
 			"rawModeData": ""
+		},
+		{
+			"id": "80d31367-8b34-7483-1d5d-275d53e2bdf3",
+			"headers": "Authorization: Bearer \n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer ",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8282/watch-series/8",
+			"folder": "a8c780ee-677d-a13a-084b-b82f93698e87",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613345219559,
+			"name": "delete watch-series",
+			"description": "",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"responses": []
+		},
+		{
+			"id": "9d3b5438-a42d-0d43-52b8-e31e39df0865",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer \n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer ",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8282/watch-series",
+			"folder": "a8c780ee-677d-a13a-084b-b82f93698e87",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613345212645,
+			"name": "put watch-series",
+			"description": "",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"responses": [],
+			"rawModeData": "{\n    \"id\": 1,\n    \"series\": \"M\"\n}"
+		},
+		{
+			"id": "b7c4fe5d-8c1a-8042-0a5b-b5f31b5f906e",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsYW5naXQiLCJleHAiOjE2MTMzNjc2MzcsImlhdCI6MTYxMzM0MjQzN30.D9hoeQt-GPvhi_l5Y2LauKsCv21UeEG3kNunWp_iuQmTLH2gTjr3LGSqxnxIJjb4NBgd8aLkxPNMAsrSZ5TJ5w\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsYW5naXQiLCJleHAiOjE2MTMzNjc2MzcsImlhdCI6MTYxMzM0MjQzN30.D9hoeQt-GPvhi_l5Y2LauKsCv21UeEG3kNunWp_iuQmTLH2gTjr3LGSqxnxIJjb4NBgd8aLkxPNMAsrSZ5TJ5w",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8282/users/4028808577a2ceff0177a2dbfd2a0001",
+			"folder": "ba773ead-6e02-3e3d-a950-767a9baba12b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613345101845,
+			"name": "delete user",
+			"description": "",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"responses": []
 		},
 		{
 			"id": "b8a94bc4-7dc8-2e04-214c-55c68b92261e",
@@ -179,12 +353,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1613235220501,
+			"time": 1613342427018,
 			"name": "register",
 			"description": "",
 			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
 			"responses": [],
-			"rawModeData": "{\n\t\"username\": \"wisnu\",\n\t\"password\": \"wisnu\",\n\t\"email\": \"wisnu@gmail.com\"\n}"
+			"rawModeData": "{\n\t\"username\": \"langit\",\n\t\"password\": \"langit\",\n\t\"email\": \"langit@gmail.com\"\n}"
 		},
 		{
 			"id": "c23e85c6-a79a-b6c0-b060-c6339204ea15",
@@ -203,8 +377,7 @@
 					"enabled": false
 				}
 			],
-			"url": "localhost:8282/login",
-			"folder": "ba773ead-6e02-3e3d-a950-767a9baba12b",
+			"url": "localhost:8282/authenticate",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -215,18 +388,55 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1613235509621,
+			"time": 1613342428813,
 			"name": "login",
 			"description": "",
 			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
 			"responses": [],
-			"rawModeData": "{\n\t\"username\" : \"nuchanadmin\",\n\t\"password\": \"$2a$10$yg/PRIuP9J17vMPJLOhiw.zWiUbra.FiSFxC2o16YACF.sYhHZTaC\"\n}"
+			"rawModeData": "{\n\t\"username\" : \"langit\",\n\t\"password\" : \"langit\"\n}"
 		},
 		{
-			"id": "edd82cd6-e4b6-0c62-fe6f-aa02621a0fd0",
-			"headers": "",
-			"headerData": [],
-			"url": "localhost:8282/users",
+			"id": "cd2e0d8c-9926-595c-8e7b-3e21fa6e2724",
+			"headers": "Authorization: Bearer \n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer ",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8282/watch-series",
+			"folder": "a8c780ee-677d-a13a-084b-b82f93698e87",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613345210668,
+			"name": "get watch-series",
+			"description": "",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"responses": []
+		},
+		{
+			"id": "d0ad4345-156c-a88c-02bb-93f3dfa3f9af",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsYW5naXQiLCJleHAiOjE2MTMzNzI1NzksImlhdCI6MTYxMzM0NzM3OX0.e6TC9TG5d34Rz9UJw7hLu3WMcaDXD7OSZD75DxPmmSxjVEdG0g7nHzszuPD78CW41WVL98hknbjPa_r1DYBsTw\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsYW5naXQiLCJleHAiOjE2MTMzNzI1NzksImlhdCI6MTYxMzM0NzM3OX0.e6TC9TG5d34Rz9UJw7hLu3WMcaDXD7OSZD75DxPmmSxjVEdG0g7nHzszuPD78CW41WVL98hknbjPa_r1DYBsTw",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8282/store",
 			"queryParams": [],
 			"pathVariables": {},
 			"pathVariableData": [],
@@ -235,16 +445,166 @@
 			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
 			"data": null,
 			"dataMode": "params",
-			"name": "get users",
+			"name": "get store",
 			"description": "",
 			"descriptionFormat": "html",
-			"time": 1613225352474,
+			"time": 1613347574414,
 			"version": 2,
 			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "ba773ead-6e02-3e3d-a950-767a9baba12b"
+			"folder": "43754402-a1e1-5c8b-7200-ca23d4fc785d"
+		},
+		{
+			"id": "d7d4a371-cb25-2b75-9f1c-67420f0e6dbf",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsYW5naXQiLCJleHAiOjE2MTMzNzI1NzksImlhdCI6MTYxMzM0NzM3OX0.e6TC9TG5d34Rz9UJw7hLu3WMcaDXD7OSZD75DxPmmSxjVEdG0g7nHzszuPD78CW41WVL98hknbjPa_r1DYBsTw\n",
+			"headerData": [
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsYW5naXQiLCJleHAiOjE2MTMzNzI1NzksImlhdCI6MTYxMzM0NzM3OX0.e6TC9TG5d34Rz9UJw7hLu3WMcaDXD7OSZD75DxPmmSxjVEdG0g7nHzszuPD78CW41WVL98hknbjPa_r1DYBsTw",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8282/store",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "put store",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1613347918822,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "43754402-a1e1-5c8b-7200-ca23d4fc785d",
+			"rawModeData": " {\n    \"id\": \"b5a05bb4-6f1d-11eb-8e53-9c5a443fe548\",\n    \"storeName\": \"cakra store\",\n\t\"storeAddress\": \"sidoarjo\"\n}"
+		},
+		{
+			"id": "e450af4c-4c90-b5ad-5576-c41899c532c2",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsYW5naXQiLCJleHAiOjE2MTMzNzI1NzksImlhdCI6MTYxMzM0NzM3OX0.e6TC9TG5d34Rz9UJw7hLu3WMcaDXD7OSZD75DxPmmSxjVEdG0g7nHzszuPD78CW41WVL98hknbjPa_r1DYBsTw\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsYW5naXQiLCJleHAiOjE2MTMzNzI1NzksImlhdCI6MTYxMzM0NzM3OX0.e6TC9TG5d34Rz9UJw7hLu3WMcaDXD7OSZD75DxPmmSxjVEdG0g7nHzszuPD78CW41WVL98hknbjPa_r1DYBsTw",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8282/store/b5a05bb4-6f1d-11eb-8e53-9c5a443fe548",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"data": null,
+			"dataMode": "params",
+			"name": "delete store",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1613347981235,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "43754402-a1e1-5c8b-7200-ca23d4fc785d"
+		},
+		{
+			"id": "ed5fbf12-2e39-75ee-66c3-50159ac5d534",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsYW5naXQiLCJleHAiOjE2MTMzNzI1NzksImlhdCI6MTYxMzM0NzM3OX0.e6TC9TG5d34Rz9UJw7hLu3WMcaDXD7OSZD75DxPmmSxjVEdG0g7nHzszuPD78CW41WVL98hknbjPa_r1DYBsTw\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsYW5naXQiLCJleHAiOjE2MTMzNzI1NzksImlhdCI6MTYxMzM0NzM3OX0.e6TC9TG5d34Rz9UJw7hLu3WMcaDXD7OSZD75DxPmmSxjVEdG0g7nHzszuPD78CW41WVL98hknbjPa_r1DYBsTw",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8282/store",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "post store",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1613347810980,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "43754402-a1e1-5c8b-7200-ca23d4fc785d",
+			"rawModeData": " {\n\t\"storeName\": \"langit store\",\n    \"storeAddress\": \"surabaya\"\n}"
+		},
+		{
+			"id": "edd82cd6-e4b6-0c62-fe6f-aa02621a0fd0",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsYW5naXQiLCJleHAiOjE2MTMzNzAxODAsImlhdCI6MTYxMzM0NDk4MH0.FdlTEWDIOszSQSSTH1-nlMUJ3UueMFlQwMdJFiHqrFku17OK7VIaTyEzCvhssXoJ2zHvT6PN5cZq3VtZm2g9Bg\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsYW5naXQiLCJleHAiOjE2MTMzNzAxODAsImlhdCI6MTYxMzM0NDk4MH0.FdlTEWDIOszSQSSTH1-nlMUJ3UueMFlQwMdJFiHqrFku17OK7VIaTyEzCvhssXoJ2zHvT6PN5cZq3VtZm2g9Bg",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8282/users",
+			"folder": "ba773ead-6e02-3e3d-a950-767a9baba12b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613347725208,
+			"name": "get users",
+			"description": "",
+			"collectionId": "c62403e9-4710-c567-1652-38dfe0975cf8",
+			"responses": [],
+			"rawModeData": ""
 		}
 	]
 }
