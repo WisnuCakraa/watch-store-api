@@ -15,14 +15,14 @@ public class StoreEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid")
-    private String id;
+    private Integer id;
     private String storeName;
     private String storeAddress;
 
     public StoreEntity() {
     }
 
-    public StoreEntity(String id, String storeName, String storeAddress) {
+    public StoreEntity(Integer id, String storeName, String storeAddress) {
         this.id = id;
         this.storeName = storeName;
         this.storeAddress = storeAddress;
@@ -33,11 +33,11 @@ public class StoreEntity {
         this.storeAddress = storeAddress;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

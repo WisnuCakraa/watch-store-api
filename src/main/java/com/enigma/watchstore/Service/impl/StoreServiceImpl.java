@@ -31,7 +31,7 @@ public class StoreServiceImpl implements StoreService {
     }
 
     @Override
-    public void deleteStore(String id) {
+    public void deleteStore(Integer id) {
         boolean exist = storeRepository.existsById(id);
 
         if (!exist) {

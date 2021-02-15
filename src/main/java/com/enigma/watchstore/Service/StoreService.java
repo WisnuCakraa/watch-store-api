@@ -12,6 +12,6 @@ public interface StoreService {
 
     List<StoreEntity> getStore();
 
-    void deleteStore(String id);
+    void deleteStore(Integer id);
 
 }
