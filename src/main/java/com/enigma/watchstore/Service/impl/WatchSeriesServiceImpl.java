@@ -35,7 +35,7 @@ public class WatchSeriesServiceImpl implements WatchSeriesService {
         boolean exist = watchSeriesRepository.existsById(id);
 
         if (!exist) {
-            throw new IllegalStateException("watchDetail with id " + id + " doesnt exist");
+            throw new IllegalStateException("watchSeries with id " + id + " doesnt exist");
         }
 
         watchSeriesRepository.deleteById(id);
